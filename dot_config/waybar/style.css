@@ -42,7 +42,7 @@ button {
     min-height: 32px;
     border-radius: 999px;
     color: @text;
-    box-shadow: 0px 0px 8px 4px @shadow inset;
+    box-shadow: 0px 0px 80px 4px @shadow inset;
     transition:
         all 50ms cubic-bezier(0.55, 0, 0.28, 1.682),
         box-shadow 50ms ease-in-out,
