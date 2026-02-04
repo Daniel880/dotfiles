@@ -30,7 +30,7 @@
         "modules": [
             "cpu",
             "memory",
-            "disc",
+            "disk",
             "temperature"
         ]
     }
