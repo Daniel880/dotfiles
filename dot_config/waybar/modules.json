@@ -73,7 +73,7 @@
             "title<.*figma.*>": " ",
             "title<.*jira.*>": " ",
             "class<jetbrains-idea>": " ",
-            "class<gitkraken>": " ",
+            "class<gitkraken>": " ",
             "class<obs|com.obsproject.Studio>": " ",
             "class<polkit-gnome-authentication-agent-1>": "󰒃 ",
             "class<nwg-look>": " ",
