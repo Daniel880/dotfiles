@@ -69,6 +69,7 @@ window#waybar {
     padding: 0 8px;
     background-color: @bg-alt;
     color: @fg;
+    border-radius: 8px;
 }
 
 #custom-quicklink1,
