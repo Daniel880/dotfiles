@@ -17,34 +17,67 @@ window#waybar {
     color: @fg;
 }
 
-#workspaces,
-#custom-appmenu,
-#quicklinks,
-#media,
-#hardware,
+/* Pill-style modules */
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
 #clock,
 #custom-notification,
-#tray {
+#custom-appmenu,
+#quicklinks,
+#tray,
+#hardware,
+#media {
     background-color: @bg;
-    border-radius: 8px;
-    padding: 0 6px;
+    border-radius: 16px;
+    padding: 1px 6px;
+    margin-right: 10px;
 }
 
-#modules-right>widget {
-    margin-left: 16px;
+#custom-notification {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
-#modules-right>widget:first-child {
-    margin-left: 0;
+#workspaces {
+    background: transparent;
+    padding: 0;
+    margin-right: 10px;
 }
 
 #workspaces button {
+    background-color: @bg;
+    border-radius: 16px;
+    padding: 1px 6px;
+    margin: 0 4px;
+}
+
+#workspaces button:first-child {
+    margin-left: 0;
+}
+
+#workspaces button:last-child {
+    margin-right: 0;
+}
+
+#modules-right>widget {
+    margin-left: 10px;
+}
+
+/* #modules-right>widget:first-child {
+    margin-left: 0;
+ }  */
+
+
+/* { 
     padding: 0 6px;
     margin: 0 2px;
     border-radius: 6px;
-    background-color: @bg-alt;
-    color: @fg;
-}
+    background-color: @warn;
+    color: @fg; 
+ } */
 
 #workspaces button.active {
     background-color: @accent;
@@ -52,52 +85,6 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background-color: @bg-alt;
+    background-color: @warn;
     color: @fg;
-}
-
-#custom-appmenu,
-#custom-notification {
-    min-width: 24px;
-    min-height: 16px;
-}
-
-#media,
-#network,
-#hardware,
-#clock {
-    padding: 0 8px;
-    background-color: @bg-alt;
-    color: @fg;
-    border-radius: 8px;
-}
-
-#custom-quicklink1,
-#custom-quicklink2,
-#custom-quicklink3,
-#custom-quicklink4,
-#custom-quicklink5,
-#custom-quicklink6,
-#custom-quicklink7,
-#custom-quicklink8,
-#custom-quicklink9,
-#custom-quicklink10 {
-    font-size: 14px;
-    margin: 0 4px;
-}
-
-#battery.critical:not(.charging),
-#temperature.critical {
-    color: @warn;
-}
-
-#cpu,
-#memory,
-#disk,
-#temperature {
-    margin-right: 10px;
-}
-
-#temperature {
-    margin-right: 0;
 }
