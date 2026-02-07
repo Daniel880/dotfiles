@@ -38,7 +38,7 @@
     "group/media": {
         "orientation": "horizontal",
         "modules": [
-            "custom/bluetooth",
+            // "custom/bluetooth",
             "pulseaudio",
             "pulseaudio#mic"
         ]

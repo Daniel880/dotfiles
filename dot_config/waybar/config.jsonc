@@ -21,14 +21,14 @@
     // "hyprland/window",
     // ],
     "modules-center": [
-        "tray",
-        "custom/notification",
         "hyprland/workspaces",
         "clock"
     ],
     "modules-right": [
-        "network",
+        //        "network",
         "mpd",
+        "custom/notification",
+        "tray",
         "group/media",
         "group/hardware",
     ]
