@@ -8,8 +8,8 @@
 * {
     all: unset;
     font-size: 14px;
-    font-weight: 600;
-    font-family: "Droid Sans Mono", monospace;
+    /* font-weight: 600; */
+    font-family: "Droid Sans Mono", "JetBrainsMono Nerd Font Mono", "JetBrainsMono Nerd Font", monospace;
 }
 
 window#waybar {
@@ -28,12 +28,54 @@ window#waybar {
 #custom-appmenu,
 #quicklinks,
 #tray,
-#hardware,
-#media {
+#mpd,
+#media,
+#hardware {
     background-color: @bg;
     border-radius: 16px;
     padding: 1px 6px;
     margin-right: 10px;
+}
+
+#network,
+#media,
+#hardware {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#hardware #cpu,
+#hardware #memory,
+#hardware #disk,
+#hardware #temperature {
+    background: transparent;
+    border-radius: 0;
+    padding: 0 6px;
+    margin: 0;
+}
+
+#hardware #cpu {
+    padding-left: 0;
+}
+
+#hardware #temperature {
+    padding-right: 0;
+}
+
+#media #custom-bluetooth,
+#media #pulseaudio,
+#media #pulseaudio.mic {
+    background: transparent;
+    padding: 0 6px;
+    margin: 0;
+}
+
+#media #custom-bluetooth {
+    padding-left: 0;
+}
+
+#media #pulseaudio.mic {
+    padding-right: 0;
 }
 
 #custom-notification {

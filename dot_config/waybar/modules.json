@@ -6,7 +6,7 @@
         "all-outputs": true,
         "sort-by-number": true,
         "show-special": false,
-        "format": " {name} {windows} ",
+        "format": " {name} {windows}",
         "format-window-separator": " ",
         "window-rewrite-default": " ",
         "window-rewrite": {
@@ -199,9 +199,9 @@
     // Network
     "network": {
         "format": "{ifname}",
-        "format-wifi": "  {signalStrength}%  {bandwidthDownBytes}  {bandwidthUpBytes} ",
-        "format-ethernet": "   {bandwidthDownBytes}  {bandwidthUpBytes} ",
-        "format-disconnected": "󰲛 ",
+        "format-wifi": "<span size='x-large'></span>  {signalStrength}% <span size='x-large'></span> {bandwidthDownBytes} <span size='x-large'></span> {bandwidthUpBytes}",
+        "format-ethernet": "<span size='x-large'></span>  <span size='x-large'></span> {bandwidthDownBytes} <span size='x-large'></span> {bandwidthUpBytes}",
+        "format-disconnected": "<span size='x-large'>󰲛</span>",
         "tooltip-format": "  {ifname} via {gwaddri}",
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",

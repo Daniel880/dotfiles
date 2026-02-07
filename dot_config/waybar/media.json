@@ -1,14 +1,14 @@
 {
     "custom/bluetooth": {
-        "format": " ",
+        "format": "<span size='large'></span>",
         "tooltip": "Bluetooth",
         "on-click": "kitty -e bluetui"
     },
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "{volume}% {icon} ",
-        "format-bluetooth-muted": "  {icon} ",
-        "format-muted": " ",
+        "format": "<span size='x-large'>{icon}</span> {volume}%",
+        "format-bluetooth": "{volume}% <span size='x-large'>{icon}</span>",
+        "format-bluetooth-muted": "<span size='x-large'></span> <span size='x-large'>{icon}</span>",
+        "format-muted": "<span size='x-large'></span>",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -17,9 +17,9 @@
             "portable": "",
             "car": "",
             "default": [
-                " ",
-                " ",
-                " "
+                "",
+                "",
+                ""
             ]
         },
         "scroll-step": 5,
@@ -27,9 +27,9 @@
         "on-click": "amixer set Master toggle"
     },
     "pulseaudio#mic": {
-        "format": "{icon} {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " ",
+        "format": "{format_source}",
+        "format-source": "<span size='x-large'></span> {volume}%",
+        "format-source-muted": "<span size='x-large'></span>",
         "on-scroll-up": "amixer set Capture 5%+",
         "on-scroll-down": "amixer set Capture 5%-",
         "on-click-right": "pavucontrol",
