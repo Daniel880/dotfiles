@@ -6,11 +6,13 @@
 @define-color warn #f28b82;
 
 * {
-    all: unset;
-    font-size: 14px;
-    /* font-weight: 600; */
-    font-family: "Droid Sans Mono";
+  all: unset;
+  font-size: 14px;
+ /* font-family: "Symbols Nerd Font", "Font Awesome 7 Free", "Font Awesome 7 Brands", "Droid Sans Mono", monospace;*/
+    font-family: "Droid Sans Mono", "Symbols Nerd Font", "Font Awesome 7 Free", "Font Awesome 7 Brands", monospace;
+/*  font-weight: 900;  ważne dla FA Solid */
 }
+
 
 window#waybar {
     background: transparent;

@@ -2,4 +2,4 @@
 path = "/home/daniel/Pictures/wallpapers/"
 duration = "1m"
 sorting = "random"
-mode = "fit"
+mode = "center"
