@@ -5,6 +5,13 @@
     transition: 200ms;
 }
 
+/* Keep only cards/panel opaque; no fullscreen tint layers */
+.floating-notifications,
+.floating-notifications.background,
+.blank-window {
+    background: transparent;
+}
+
 trough highlight {
     background: #c6d0f5;
 }
