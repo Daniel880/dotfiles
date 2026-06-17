@@ -30,9 +30,9 @@ if (( ${#DISPLAYS[@]} == 0 )); then
 fi
 
 # ustaw jasność na max 2 pierwszych monitorach
-for d in "${DISPLAYS[@]:0:2}"; do
+for d in "${DISPLAYS[@]:0:3}"; do
   ddcutil --display "$d" setvcp 10 "$B" >/dev/null
 done
 
-echo "Ustawiono jasność $B na monitorach: ${DISPLAYS[*]:0:2}"
+echo "Ustawiono jasność $B na monitorach: ${DISPLAYS[*]:0:3}"
 
