@@ -1,0 +1,87 @@
+
+### Toolkit Backend Variables ###
+export GDK_BACKEND='wayland,x11,*'
+export QT_QPA_PLATFORM='wayland;xcb'
+export CLUTTER_BACKEND='wayland'
+
+#Run SDL2 applications on Wayland.
+#Remove or set to x11 if games that provide older versions of SDL cause compatibility issues
+# export SDL_VIDEODRIVER='wayland'
+
+### XDG Specifications ###
+export XDG_CURRENT_DESKTOP='Hyprland'
+export XDG_SESSION_DESKTOP='Hyprland'
+export XDG_SESSION_TYPE='wayland'
+
+### QT Variables ###
+export QT_AUTO_SCREEN_SCALE_FACTOR='1'
+export QT_WAYLAND_DISABLE_WINDOWDECORATION='1'
+export QT_QPA_PLATFORMTHEME='qt5ct'
+export QT_QPA_PLATFORMTHEME='qt6ct'
+
+### hyprland-qt-support ###
+export QT_QUICK_CONTROLS_STYLE='org.hyprland.style'
+
+### xwayland apps scale fix (useful if you are use monitor scaling) ###
+# Set same value if you use scaling in Monitors.conf
+# 1 is 100% 1.5 is 150%
+# see https://wiki.hyprland.org/Configuring/XWayland/
+export GDK_SCALE='1'
+export QT_SCALE_FACTOR='1'
+
+# Bibata-Modern-Ice-Cursor
+# NOTE! You must have the hyprcursor version to activate this.
+# https://wiki.hyprland.org/Hypr-Ecosystem/hyprcursor/
+# export HYPRCURSOR_THEME='Adwaita'
+# export HYPRCURSOR_SIZE='24'
+export XCURSOR_THEME='Adwaita'
+export XCURSOR_SIZE='24'
+
+### firefox ###
+export MOZ_ENABLE_WAYLAND='1'
+
+### electron >28 apps (may help) ###
+# https://www.electronjs.org/docs/latest/api/environment-variables
+# auto selects Wayland if possible, X11 otherwise
+export ELECTRON_OZONE_PLATFORM_HINT='auto'
+
+### NVIDIA ###
+# This is from Hyprland Wiki. Below will be activated nvidia gpu detected
+# See hyprland wiki https://wiki.hyprland.org/Nvidia/#environment-variables
+
+export LIBVA_DRIVER_NAME='nvidia'
+export __GLX_VENDOR_LIBRARY_NAME='nvidia'
+export NVD_BACKEND='direct'
+export GSK_RENDERER='ngl'
+
+### additional ENV's for nvidia. Caution, activate with care ###
+# export GBM_BACKEND='nvidia-drm'
+
+# export __GL_GSYNC_ALLOWED='1' # adaptive Vsync
+# export __NV_PRIME_RENDER_OFFLOAD='1'
+# export __VK_LAYER_NV_optimus='NVIDIA_only'
+# export WLR_DRM_NO_ATOMIC='1'
+
+### FOR VM and POSSIBLY NVIDIA ###
+# LIBGL_ALWAYS_SOFTWARE software mesa rendering
+# export LIBGL_ALWAYS_SOFTWARE='1' # Warning. May cause hyprland to crash
+# export WLR_RENDERER_ALLOW_SOFTWARE='1'
+
+### nvidia firefox ###
+# check this post https://github.com/elFarto/nvidia-vaapi-driver#configuration
+export MOZ_DISABLE_RDD_SANDBOX='1'
+export EGL_PLATFORM='wayland'
+
+### Aquamarine Environment Variables (Hyprland > 0.45) ###
+# https://wiki.hyprland.org/Configuring/Environment-variables/#aquamarine-environment-variables----ref-httpsgithubcomhyprwmaquamarineblobmaindocsenvmd---
+# export AQ_TRACE='1' # Enables more verbose logging.
+# export AQ_DRM_DEVICES='/dev/dri/card1:/dev/dri/card0' # Set an explicit list of DRM devices (GPUs) to use. It’s a colon-separated list of paths, with the first being the primary. E.g. /dev/dri/card1:/dev/dri/card0
+# export AQ_MGPU_NO_EXPLICIT='1' # Disables explicit syncing on mgpu buffers
+# export AQ_NO_MODIFIERS='1' # Disables modifiers for DRM buffers
+
+#### Hyprland Environment Variables ####
+# https://wiki.hyprland.org/Configuring/Environment-variables/#hyprland-environment-variables
+# export HYPRLAND_TRACE='1' # Enables more verbose logging.
+# export HYPRLAND_NO_RT='1' # Disables realtime priority setting by Hyprland.
+# export HYPRLAND_NO_SD_NOTIFY='1' # If systemd, disables the 'sd_notify' calls.
+# export HYPRLAND_NO_SD_VARS='1' # Disables management of variables in systemd and dbus activation environments.
